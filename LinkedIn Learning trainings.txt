@@ -1,0 +1,14 @@
+Hi everyone below are some of the training for Image processing. Do these to have some idea on image processing so we can smoothly start the project.
+
+1. https://www.linkedin.com/learning/opencv-for-python-developers-17583985/image-processing-with-opencv?u=56973065 
+2. https://www.linkedin.com/learning/opencv-for-python-developers-17583985/what-you-should-know?autoSkip=true&resume=false&u=56973065
+3. https://www.linkedin.com/learning/data-science-foundations-python-scientific-stack-17064277/the-python-scientific-stack?u=56973065
+4. https://www.linkedin.com/learning/artificial-intelligence-foundations-neural-networks-22853427/neural-networks-101-your-path-to-ai-brilliance?u=56973065
+5. https://www.linkedin.com/learning/neural-networks-and-convolutional-neural-networks-essential-training/welcome?u=56973065
+6. https://www.linkedin.com/learning/deep-learning-image-recognition/build-cutting-edge-image-recognition-systems?u=56973065
+7. https://www.linkedin.com/learning/building-recommender-systems-with-machine-learning-and-ai/install-anaconda-review-course-materials-and-create-movie-recommendations?u=56973065
+Install Anaconda Toolkit into your systems:
+Link: https://www.anaconda.com/download 
+Python: https://www.python.org/downloads/
+
+Regards,
