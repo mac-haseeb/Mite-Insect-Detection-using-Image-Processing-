@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'video/upload_video.css' %}">
+{% endblock %}
+
+{% block content %}
+    <nav class="horizontal-navbar">
+        <div class="logo">
+            <a href="#"><img src="https://usa.growliv.com/cdn/shop/files/logo_300px.png?v=1661231258" alt="Company Logo"></a>
+        </div>
+        <ul>
+            <li><a href="{% url 'upload_video' %}">Upload Video</a></li>
+            <li><a href="{% url 'user_uploaded_videos' %}">Uploaded Videos</a></li>
+            <li><a href="{% url 'login_view' %}">Logout</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+    <div class="upload-video-body">
+        <div class="upload-container">
+            <h1>Upload Video</h1>
+{#            <form method="post" enctype="multipart/form-data">#}
+{#                {% csrf_token %}#}
+{#                <div class="form-group">#}
+{#                    {{ form.title.label_tag }}#}
+{#                    {{ form.title }}#}
+{#                </div>#}
+{#                <div class="form-group">#}
+{#                    {{ form.description.label_tag }}#}
+{#                    {{ form.description }}#}
+{#                </div>#}
+{#                <div class="form-group">#}
+{#                    {{ form.video_file.label_tag }}#}
+{#                    {{ form.video_file }}#}
+{#                </div>#}
+{#                <div class="btn-container">#}
+{#                    <button type="submit" class="btn">Upload</button>#}
+{#                </div>#}
+{#            </form>#}
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+
+                <div class="form-group">
+{#                    <label for="video_title" class="custom-label">Video Title:</label>#}
+                    <input type="text" name="title" class="video-input-field" placeholder="Video Title" required>
+                </div>
+
+                <div class="form-group">
+{#                    <label for="video_description" class="custom-label">Video Description:</label>#}
+                    <textarea name="description" class="video-input-field" placeholder="Video Description" required></textarea>
+                </div>
+
+                <div class="form-group">
+{#                    <label for="video_file" class="custom-label">Video File:</label>#}
+                    <input type="file" name="video_file" class="video-input-field" required>
+                </div>
+
+                <div class="btn-container">
+                    <button type="submit" class="btn btn-upload">Upload Video</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+{% endblock %}
