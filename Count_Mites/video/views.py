@@ -19,3 +19,13 @@ def upload_video(request):
 
     print(form)
     return render(request, 'video/upload_video.html', {'form': form})
+
+
+def user_uploaded_videos(request):
+    user = request.user
+
+    # Fetch all videos uploaded by the current user
+    uploaded_videos = Video.objects.filter(user=user)
+
+    return render(request, 'video/uploaded_videos.html', {'uploaded_videos': uploaded_videos})
+

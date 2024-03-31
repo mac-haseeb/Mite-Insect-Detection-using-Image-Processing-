@@ -1,0 +1,269 @@
+/*!* Add this to your CSS file *!*/
+/*.uploaded-videos {*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background: linear-gradient(45deg, #3498db, #2ecc71);*/
+/*    min-height: 100vh;*/
+/*}*/
+
+/*.container {*/
+/*    background-color: #fff;*/
+/*    border-radius: 15px;*/
+/*    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);*/
+/*    padding: 30px;*/
+/*    text-align: center;*/
+/*    width: 80%;*/
+/*    max-width: 800px;*/
+/*    margin: 20px auto;*/
+/*}*/
+
+/*h1 {*/
+/*    color: #6b42ff;*/
+/*    margin-bottom: 20px;*/
+/*    font-size: 2em;*/
+/*}*/
+
+/*ul {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*}*/
+
+/*li {*/
+/*    margin-bottom: 30px;*/
+/*}*/
+
+/*h2 {*/
+/*    color: #6b42ff;*/
+/*    font-size: 1.5em;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*p {*/
+/*    color: #888;*/
+/*    font-size: 1.1em;*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*video {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    border-radius: 10px;*/
+/*    outline: none;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+
+
+
+
+
+
+/* Add this to your CSS file */
+/*body {*/
+/*    margin: 0;*/
+/*}*/
+
+/*.uploaded-videos {*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background: linear-gradient(45deg, #3498db, #2ecc71);*/
+/*    min-height: 100vh;*/
+/*}*/
+
+/*.container {*/
+/*    background-color: #fff;*/
+/*    border-radius: 15px;*/
+/*    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);*/
+/*    padding: 30px;*/
+/*    text-align: center;*/
+/*    width: 80%;*/
+/*    max-width: 800px;*/
+/*    margin: 20px auto;*/
+/*}*/
+
+/*h1 {*/
+/*    color: #6b42ff;*/
+/*    margin-bottom: 20px;*/
+/*    font-size: 2em;*/
+/*}*/
+
+/*.videos-table {*/
+/*    width: 100%;*/
+/*    border-collapse: collapse;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*.videos-table th, .videos-table td {*/
+/*    padding: 10px;*/
+/*    border-bottom: 1px solid #ddd;*/
+/*}*/
+
+/*.videos-table th {*/
+/*    background-color: #f2f2f2;*/
+/*    color: #6b42ff;*/
+/*}*/
+
+/*.videos-table td {*/
+/*    text-align: left;*/
+/*}*/
+
+/*video {*/
+/*    width: 100px;*/
+/*    height: auto;*/
+/*    border-radius: 5px;*/
+/*    outline: none;*/
+/*    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add this to your CSS file */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+}
+
+.uploaded-videos {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0;
+    /*background: linear-gradient(45deg, #3498db, #2ecc71);*/
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+h1 {
+    color: #6b42ff;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.videos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.videos-table th, .videos-table td {
+    padding: 6px; /* Reduce padding */
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    max-height: 100px; /* Limit maximum height */
+    overflow: hidden; /* Hide overflow */
+}
+
+.videos-table th {
+    background-color: #6b42ff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.videos-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.videos-table tbody tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ensure video fits within cell */
+    max-height: 60px; /* Limit video height */
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.upload-button-container {
+    margin-top: 60px;
+}
+
+.upload-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6b42ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #4a2ea3;
+}
+
+.horizontal-navbar {
+    background-color: #6B42FE; /* Change the background color */
+    text-align: right; /* Align all content to the right */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align items to the end (right side) */
+    align-items: center; /* Center items vertically */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.horizontal-navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-navbar ul li {
+    display: inline;
+}
+
+.horizontal-navbar ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.horizontal-navbar ul li a:hover {
+    background-color: #34495e; /* Change the background color on hover */
+}
+
+.horizontal-navbar .logo {
+    margin-right: auto; /* Push the logo to the left */
+    margin-left: 20px; /* Add some left margin for spacing */
+}
+
+.horizontal-navbar .logo img {
+    max-width: 100px; /* Set the maximum width */
+    max-height: 50px; /* Set the maximum height */
+}

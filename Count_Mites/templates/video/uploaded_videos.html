@@ -1,0 +1,117 @@
+{#{% extends 'base.html' %}#}
+{#{% load static %}#}
+{##}
+{#{% block extra_head %}#}
+{#    <link rel="stylesheet" href="{% static 'video/uploaded_videos.css' %}">#}
+{#{% endblock %}#}
+{##}
+{#{% block content %}#}
+{#    <nav class="horizontal-navbar">#}
+{#        <div class="logo">#}
+{#            <a href="#"><img src="https://usa.growliv.com/cdn/shop/files/logo_300px.png?v=1661231258" alt="Company Logo"></a>#}
+{#        </div>#}
+{#        <ul>#}
+{#            <li><a href="{% url 'upload_video' %}">Upload Video</a></li>#}
+{#            <li><a href="{% url 'user_uploaded_videos' %}">Uploaded Videos</a></li>#}
+{#            <li><a href="{% url 'login_view' %}">Logout</a></li>#}
+{#            <!-- Add more navigation links as needed -->#}
+{#        </ul>#}
+{#    </nav>#}
+{#    <div class="uploaded-videos">#}
+{#    <div class="div-container">#}
+{#        <div class="container">#}
+{#            <h1>Your Uploaded Videos</h1>#}
+{#            <table class="videos-table">#}
+{#                <thead>#}
+{#                    <tr>#}
+{#                        <th>Title</th>#}
+{#                        <th>Description</th>#}
+{#                        <th>Video</th>#}
+{#                    </tr>#}
+{#                </thead>#}
+{#                <tbody>#}
+{#                    {% for video in uploaded_videos %}#}
+{#                        <tr>#}
+{#                            <td>{{ video.title }}</td>#}
+{#                            <td>{{ video.description }}</td>#}
+{#                            <td>#}
+{#                                <video controls class="table-video">#}
+{#                                    <source src="{{ video.video_file.url }}" type="video/mp4">#}
+{#                                    Your browser does not support the video tag.#}
+{#                                </video>#}
+{#                            </td>#}
+{#                        </tr>#}
+{#                    {% endfor %}#}
+{#                </tbody>#}
+{#            </table>#}
+{#        <div class="upload-button-container">#}
+{#                <a href="{% url 'upload_video' %}" class="upload-button">Upload New Video</a>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#{% endblock %}#}
+{##}
+
+
+
+
+
+
+
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'video/uploaded_videos.css' %}">
+    <script>
+        function openVideo(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+{% endblock %}
+
+{% block content %}
+    <nav class="horizontal-navbar">
+        <div class="logo">
+            <a href="#"><img src="https://usa.growliv.com/cdn/shop/files/logo_300px.png?v=1661231258" alt="Company Logo"></a>
+        </div>
+        <ul>
+            <li><a href="{% url 'upload_video' %}">Upload Video</a></li>
+            <li><a href="{% url 'user_uploaded_videos' %}">Uploaded Videos</a></li>
+            <li><a href="{% url 'login_view' %}">Logout</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+    <div class="div-container">
+        <div class="container">
+            <h1>Your Uploaded Videos</h1>
+            <table class="videos-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Video</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for video in uploaded_videos %}
+                        <tr>
+                            <td>{{ video.title }}</td>
+                            <td>{{ video.description }}</td>
+                            <td onclick="openVideo('{{ video.video_file.url }}')">
+                                <video controls class="table-video">
+                                    <source src="{{ video.video_file.url }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <div class="upload-button-container">
+                <a href="{% url 'upload_video' %}" class="upload-button">Upload New Video</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
