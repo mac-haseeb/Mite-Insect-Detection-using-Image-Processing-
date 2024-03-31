@@ -1,0 +1,30 @@
+{#{% load static %}#}
+{##}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Count Mites</title>#}
+{#    <link rel="stylesheet" href="{% static 'user/home_page.css' %}"/>#}
+{#    <link rel="stylesheet" href="{% static 'user/login.css' %}"/>#}
+{#    <link rel="stylesheet" href="{% static 'user/signup.css' %}"/>#}
+{#    <link rel="stylesheet" href="{% static 'video/upload_video.css' %}">#}
+{#</head>#}
+{#<body>#}
+{#    {% block body_block %}*** {% endblock %}#}
+{#</body>#}
+{#</html>#}
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>

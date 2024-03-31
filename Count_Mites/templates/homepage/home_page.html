@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href={% static "home/home_page.css" %}>
+{% endblock %}
+
+{% block content %}
+    
+    <div class="home-body">
+        <header>
+    {#        <h1>Countmites</h1>#}
+            <img src="https://usa.growliv.com/cdn/shop/files/logo_300px.png?v=1661231258" alt="Countmites Logo" class="logo">
+        </header>
+    
+        <div class="home-container">
+            <p>Welcome to Countmites, your ultimate counting experience!</p>
+            <p class="text-mite">
+                Ditch manual mite counting! Upload a video, and our AI does the rest. Identify & count predatory & fed mites
+                with unmatched accuracy in seconds. Effortless, fast, insightful. Start counting mites smarter today!
+            </p>
+            <div class="home-btn-container">
+                <a href="/user/signup" class="home-btn">Register</a>
+                <a href="/user/login" class="home-btn home-btn-login">Login</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
